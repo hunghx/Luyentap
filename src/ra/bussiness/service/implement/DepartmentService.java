@@ -7,7 +7,7 @@ import ra.bussiness.util.IOFile;
 import java.util.List;
 
 public class DepartmentService implements IDepartmentService {
-    private List<Department> departments;
+    private final List<Department> departments;
 
     public DepartmentService() {
        this.departments = IOFile.readFromFile(IOFile.DEPARTMENT_PATH);
